@@ -10,6 +10,7 @@ import Team from "../src/components/Team";
 import TeamMember from "../src/components/TeamMember";
 import Interest from "../src/components/Interest";
 import TextField from "../src/components/TextField";
+import Impressum from "../src/components/Impressum";
 
 const components = {
   heroBanner: HeroBanner,
@@ -20,6 +21,7 @@ const components = {
   teamMember: TeamMember,
   interest: Interest,
   textField: TextField,
+  impressum: Impressum,
 
   teaser: Teaser,
   page: Page,
