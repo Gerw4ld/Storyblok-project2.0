@@ -8,6 +8,8 @@ import HeroBanner from "../src/components/HeroBanner";
 import ContactAndInfo from "../src/components/ContactAndInfo";
 import Team from "../src/components/Team";
 import TeamMember from "../src/components/TeamMember";
+import Interest from "../src/components/Interest";
+import TextField from "../src/components/TextField";
 
 const components = {
   heroBanner: HeroBanner,
@@ -16,6 +18,8 @@ const components = {
   contactAndInfo: ContactAndInfo,
   team: Team,
   teamMember: TeamMember,
+  interest: Interest,
+  textField: TextField,
 
   teaser: Teaser,
   page: Page,
