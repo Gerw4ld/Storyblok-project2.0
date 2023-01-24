@@ -8,7 +8,7 @@ const MainInfo = ({blok}) => {
                 <h2>{blok.title}</h2>
                 {render(blok.text)}
             </div>
-            <div className="grid grid-cols-3">
+            <div className="grid sm:grid-cols-3 grid-cols-2">
                 {blok.columns.map((nestedBlok) => (
                     <StoryblokComponent blok={nestedBlok} key={nestedBlok._uid}/>
                 ))}</div>

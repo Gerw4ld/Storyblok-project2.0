@@ -3,7 +3,7 @@ import {render} from "storyblok-rich-text-react-renderer";
 import Image from "next/image";
 
 const Interest = ({blok}) => {
-    return (<div className="grid grid-cols-2" {...storyblokEditable(blok)}>
+    return (<div className="sm:grid sm:grid-cols-2" {...storyblokEditable(blok)}>
             <div className="flex flex-col items-center justify-center p-9">
                 {render(blok.text)}
             </div>
