@@ -1,5 +1,6 @@
-import {storyblokEditable} from "@storyblok/react";
+import { storyblokEditable} from "@storyblok/react";
 import Image from "next/image";
+import {render} from "storyblok-rich-text-react-renderer";
 
 const HeroBanner = ({blok}) => {
     return (
@@ -11,7 +12,7 @@ const HeroBanner = ({blok}) => {
 
             <div className={"absolute top-0 bottom-0 left-0 right-0 z-50 flex justify-center items-center text-center text-white flex-col"}>
                 <h1>{blok.title}</h1>
-                <p>{blok.text}</p>
+                {render(blok.text)}
                 <button>{blok.button}</button>
             </div>
         </div>
