@@ -2,7 +2,8 @@ import '../styles/globals.css'
 import { storyblokInit, apiPlugin } from "@storyblok/react";
 import MainInfoItem from "../src/components/MainInfoItem";
 import MainInfo from "../src/components/MainInfo";
-import Teaser from "../src/components/Teaser";
+import MenuContainer from "../src/components/MenuContainer";
+import MenuItem from "../src/components/MenuItem";
 import Page from "../src/components/Page";
 import HeroBanner from "../src/components/HeroBanner";
 import ContactAndInfo from "../src/components/ContactAndInfo";
@@ -13,6 +14,9 @@ import TextField from "../src/components/TextField";
 import Impressum from "../src/components/Impressum";
 
 const components = {
+  page: Page,
+  menuContainer: MenuContainer,
+  menuItem: MenuItem,
   heroBanner: HeroBanner,
   mainInfo: MainInfo,
   mainInfoItem: MainInfoItem,
@@ -22,10 +26,6 @@ const components = {
   interest: Interest,
   textField: TextField,
   impressum: Impressum,
-
-  teaser: Teaser,
-  page: Page,
-
 };
 
 storyblokInit({

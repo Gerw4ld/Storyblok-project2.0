@@ -6,7 +6,7 @@ const Impressum = ({blok}) => {
     const [showText, setShowText] = useState(false);
 
     return (
-        <div className={`px-6 flex flex-col ${blok.textPosition}`} {...storyblokEditable(blok)}>
+        <div id={blok.anchor} className={`px-6 flex flex-col ${blok.textPosition}`} {...storyblokEditable(blok)}>
             <p className="cursor-pointer hover:bg-gray-100" onClick={() => setShowText(!showText)}>{blok.title}</p>
             <div>
                 { showText ?render(blok.text): null}

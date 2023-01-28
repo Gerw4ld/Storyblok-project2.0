@@ -3,7 +3,7 @@ import {render} from "storyblok-rich-text-react-renderer";
 
 const MainInfo = ({blok}) => {
     return (
-        <div {...storyblokEditable(blok)}>
+        <div id={blok.anchor} {...storyblokEditable(blok)}>
             <div className="text-left">
                 <h2>{blok.title}</h2>
                 {render(blok.text)}

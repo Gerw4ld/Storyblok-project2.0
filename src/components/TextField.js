@@ -3,7 +3,8 @@ import {render} from "storyblok-rich-text-react-renderer";
 
 const TextField = ({blok}) => {
     return (
-        <div style={{background: blok.color.color}}
+        <div id={blok.anchor}
+            style={{background: blok.color.color}}
              className="flex flex-col justify-center" {...storyblokEditable(blok)}>
             <div className="p-4">
                 <div>

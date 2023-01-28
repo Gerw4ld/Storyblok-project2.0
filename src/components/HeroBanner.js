@@ -4,7 +4,7 @@ import {render} from "storyblok-rich-text-react-renderer";
 
 const HeroBanner = ({blok}) => {
     return (
-        <div
+        <div id={blok.anchor}
             className="bg-red flex justify-center items-center overflow-hidden relative max-h-[480px]"{...storyblokEditable(blok)}>
             {blok.image.filename && blok.image.alt &&
                 <Image width={"1280"} height={"1280"} src={blok.image.filename} alt={blok.image.alt}
