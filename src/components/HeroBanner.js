@@ -13,7 +13,7 @@ const HeroBanner = ({blok}) => {
             <div className={"absolute top-0 bottom-0 left-0 right-0 z-50 flex justify-center items-center text-center text-white flex-col"}>
                 <h1>{blok.title}</h1>
                 {render(blok.text)}
-                <button>{blok.button}</button>
+                <button className="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">{blok.button}</button>
             </div>
         </div>
     )
