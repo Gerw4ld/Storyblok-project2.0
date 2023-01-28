@@ -5,7 +5,7 @@ const TextField = ({blok}) => {
     return (
         <div id={blok.anchor}
             style={{background: blok.color.color}}
-             className="flex flex-col justify-center" {...storyblokEditable(blok)}>
+             className="flex flex-col justify-center sm:py-6" {...storyblokEditable(blok)}>
             <div className="p-4">
                 <div>
                     {blok.title}
