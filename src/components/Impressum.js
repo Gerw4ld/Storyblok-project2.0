@@ -1,11 +1,16 @@
 import {storyblokEditable} from "@storyblok/react";
 import {render} from "storyblok-rich-text-react-renderer";
+import {useState} from "react";
 
 const Impressum = ({blok}) => {
+    const [showText, setShowText] = useState(false);
 
     return (
         <div className={`px-6 flex flex-col ${blok.textPosition}`} {...storyblokEditable(blok)}>
-            {render(blok.text)}
+            <p className="cursor-pointer hover:bg-gray-100" onClick={() => setShowText(!showText)}>{blok.title}</p>
+            <div>
+                { showText ?render(blok.text): null}
+            </div>
         </div>
     )
 }
